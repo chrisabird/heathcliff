@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+<main class="posts">
+<h1>Categories</h1>
+<p>
 <ul>
 {% for category, articles in categories %}
     <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
 {% endfor %}
 </ul>
+</p>
+</main>
 {% endblock %}
